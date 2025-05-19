@@ -3,7 +3,7 @@
 # frozen_string_literal: true
 
 # sketchybar.rb
-class Sketchybar < Formula
+class SketchybarDisplay < Formula
   env :std
   desc "Custom macOS statusbar with shell plugin, interaction and graph support"
   homepage "https://github.com/Masstronaut/SketchyBar"
