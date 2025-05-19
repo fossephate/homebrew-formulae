@@ -6,11 +6,16 @@
 class Sketchybar < Formula
   env :std
   desc "Custom macOS statusbar with shell plugin, interaction and graph support"
-  homepage "https://github.com/FelixKratz/SketchyBar"
-  url "https://github.com/FelixKratz/SketchyBar/archive/refs/tags/v2.22.1.tar.gz"
+  homepage "https://github.com/Masstronaut/SketchyBar"
   sha256 "3cda94a2b12402ad45395a1d3239834ce891839b83099a07ba0aa27e12bd50d7"
   license "GPL-3.0-only"
-  head "https://github.com/FelixKratz/SketchyBar.git"
+  # Instead of URL and sha256, we'll use head for git clone
+  head do
+    url "https://github.com/Masstronaut/SketchyBar.git", branch: "master"
+  end
+  
+  # Force using the head version since there's no release archive
+  version "2.22.1"
 
   def clear_env
     ENV.delete("CFLAGS")
