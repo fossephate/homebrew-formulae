@@ -7,7 +7,7 @@ class SketchybarDisplay < Formula
   env :std
   desc "Custom macOS statusbar with shell plugin, interaction and graph support"
   homepage "https://github.com/Masstronaut/SketchyBar"
-  sha256 "3cda94a2b12402ad45395a1d3239834ce891839b83099a07ba0aa27e12bd50d7"
+  sha256 "c33deab0152c3dbd96cc942456a2ba25fb265de2"
   license "GPL-3.0-only"
   # Instead of URL and sha256, we'll use head for git clone
   head do
